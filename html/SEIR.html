@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Selector-Embedded Iterative Regression</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for SEIR {SEIR}"><tr><td>SEIR {SEIR}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Selector-Embedded Iterative Regression</h2>
+
+<h3>Description</h3>
+
+<p>Selector-Embedded Iterative Regression
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+SEIR(
+  Y,
+  X,
+  GM = NULL,
+  CV = NULL,
+  maxStep = 10,
+  selector = c("L0", "L1", "MCP", "stepwise", "bess", "MARS", "SCAD", "lars", "vif",
+    "SES", "FBED"),
+  fun.selection = c("fastLm", "lm.vec"),
+  extraction = c("bagging-like", "1se", "min", "mean"),
+  X.check = c(TRUE, FALSE),
+  chunk.num = NULL,
+  file.output = TRUE,
+  plot.style = "CMplot",
+  cutOff = 0.05
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>Y</code></td>
+<td>
+<p>Phenotypic vector with length n</p>
+</td></tr>
+<tr valign="top"><td><code>X</code></td>
+<td>
+<p>n by m dataframe, matrix or big.matrix of genotype matrix</p>
+</td></tr>
+<tr valign="top"><td><code>GM</code></td>
+<td>
+<p>m by 3 dataframe or matrix for SNP name, chromosome and BP</p>
+</td></tr>
+<tr valign="top"><td><code>CV</code></td>
+<td>
+<p>n by t dataframe or matrix for t covariates</p>
+</td></tr>
+<tr valign="top"><td><code>maxStep</code></td>
+<td>
+<p>maxStep Maximum number of iteration steps</p>
+</td></tr>
+<tr valign="top"><td><code>selector</code></td>
+<td>
+<p>selector A method for Variable selection</p>
+</td></tr>
+<tr valign="top"><td><code>fun.selection</code></td>
+<td>
+<p>fun.selection The core function for parameter calculation, lm.vec is more faster than fastLm</p>
+</td></tr>
+<tr valign="top"><td><code>extraction</code></td>
+<td>
+<p>A method for calculating p values</p>
+</td></tr>
+<tr valign="top"><td><code>X.check</code></td>
+<td>
+<p>logical</p>
+</td></tr>
+<tr valign="top"><td><code>chunk.num</code></td>
+<td>
+<p>The &quot;pieces&quot; number of genotype matrix when considering memory size</p>
+</td></tr>
+<tr valign="top"><td><code>file.output</code></td>
+<td>
+<p>output GWAS results, Manhattan and QQ plot</p>
+</td></tr>
+<tr valign="top"><td><code>plot.style</code></td>
+<td>
+<p>plot.style</p>
+</td></tr>
+<tr valign="top"><td><code>cutOff</code></td>
+<td>
+<p>The threshold</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>List - includes the suggested SNPs, the results with normal 4-column format (SNP, chromosome, BP, p-values), the matrix of coefficients, SE, z-values, p-values, and the matrices of coefficients, SE, z-values, p-values from each iterative step
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+         data(geno)
+         data(phe)
+         data(map)
+         SEIR(Y=phe,X=geno,GM=map,CV=NULL,maxStep=10,
+              selector="stepwise",fun.selection="fastLm",
+              extraction="min",X.check="FALSE",chunk.num = NULL,
+              file.output=FALSE,plot.style="SEIR",cutOff=0.05)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>SEIR</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>
