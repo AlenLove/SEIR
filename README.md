@@ -12,6 +12,5 @@ devtools::install_github("AlenLove/SEIR")
 SEIR R version only support numeric data type
 # Usage
 library(SEIR)
-
-# genotype information data
+# #genotype information data
 data(geno)
