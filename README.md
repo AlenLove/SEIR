@@ -8,10 +8,11 @@
    install.packages("devtools")
 
    devtools::install_github("AlenLove/SEIR")
-   
+   ```R
    packageurl <- "https://github.com/AlenLove/SEIR/releases/download/V0.1.0/SEIR_0.1.0.zip"
    
    install.packages(packageurl,repos=NULL)
+   ```
 
 ## Demo Data
    SEIR R version only support numeric data type
