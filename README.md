@@ -9,7 +9,7 @@
 
    devtools::install_github("AlenLove/SEIR")
    ```R
-   packageurl <- "https://github.com/AlenLove/SEIR/releases/download/V0.1.0/SEIR_0.1.0.zip"
+   packageurl <- "https://raw.githubusercontent.com/AlenLove/SEIR/master/0.1.0/SEIR_0.1.0.zip"
    
    install.packages(packageurl,repos=NULL)
    ```
