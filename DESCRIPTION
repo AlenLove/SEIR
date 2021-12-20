@@ -1,0 +1,29 @@
+Package: SEIR
+Type: Package
+Title: Selector-Embedded Iterative Regression
+Version: 1.1.0
+Author: Mengjin Zhu
+Maintainer: Mengjin zhu<glzhou@webmail.hzau.edu.cn>
+Description: A fast and extremely powerful R package for GWAS.
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.5.0)  
+Imports:
+    Rcpp,
+    RcppZiggurat,
+    StepReg,
+    SIS,
+    compiler,
+    RcppEigen,
+    CMplot,
+	  lars,
+    earth,
+    ncvreg,
+    l0ara
+RoxygenNote: 7.1.1
+
+  
+    
+    
