@@ -58,7 +58,8 @@ The map file is listed as follows:
 
 #### # genotype data
     data(geno)
-    
+The genotype file is listed as follows:
+
 <table>
 <tbody>
 <tr>
@@ -109,7 +110,7 @@ The map file is listed as follows:
 
 #### # phenotype data
     data(phe)
-We suggest to provide the phenotype file
+The phenotype file is listed as follows:
 
 | Taxa | trait1 | trait2 | trait3 |
 | :---: | :---: |:---: |:---: |
