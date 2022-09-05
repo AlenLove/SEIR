@@ -21,6 +21,7 @@
 
 #### # genotype information data
     data(map)
+The map file is listed as follows:
     
 <table>
 <tbody>
