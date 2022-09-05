@@ -127,6 +127,7 @@ The phenotype file is listed as follows:
          selector="stepwise",fun.selection="fastLm",
          extraction="min",X.check="FALSE",chunk.num = NULL,
          file.output=TRUE,plot.style="CMplot",cutOff=0.05)
+
 **Y**, Phenotypic vector with length n 
 **X**, n by m dataframe, matrix or big.matrix of genotype matrix  
 **GM**, m by 3 dataframe or matrix for SNP name, chromosome and BP
