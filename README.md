@@ -3,7 +3,7 @@
   
    Written by Mengjin Zhu & GuangLiang Zhou
   
-   Last update: Sep 27, 2021
+   Last update: Sep 5, 2022
 ## Installation
    install.packages("devtools")
 
@@ -29,7 +29,7 @@
 SEIR(Y=phe,X=geno,GM=map,CV=NULL,maxStep=10,
     selector="stepwise",fun.selection="fastLm",
     extraction="min",X.check="FALSE",chunk.num = NULL,
-    file.output=FALSE,plot.style="SEIR",cutOff=0.05)
+    file.output=TRUE,plot.style="CMplot",cutOff=0.05)
 #### # more features   
 More parameters explained [here]
 ### Issues
@@ -39,4 +39,4 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
 ## Author
-Mengjin zhu (glzhou@webmail.hzau.edu.cn)
+Mengjin Zhu & GuangLiang Zhou (glzhou@webmail.hzau.edu.cn)
