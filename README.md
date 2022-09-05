@@ -140,6 +140,7 @@ The phenotype file is listed as follows:
 **file.output**, Output GWAS results, Manhattan and QQ plot
 **plot.style**, a method for plot Manhattan and QQ plot
 **cutoff**, 0.05/marker size, a cutoff line on manhattan plot
+
 #### # more features   
 More parameters explained [here]
 ### Issues
