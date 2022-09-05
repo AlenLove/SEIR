@@ -123,10 +123,10 @@ The phenotype file is listed as follows:
 |A239	|100.2|-0.16|1|
 
 #### # association analysis
-SEIR(Y=phe,X=geno,GM=map,CV=NULL,maxStep=10,
-    selector="stepwise",fun.selection="fastLm",
-    extraction="min",X.check="FALSE",chunk.num = NULL,
-    file.output=TRUE,plot.style="CMplot",cutOff=0.05)
+     SEIR(Y=phe,X=geno,GM=map,CV=NULL,maxStep=10,
+         selector="stepwise",fun.selection="fastLm",
+         extraction="min",X.check="FALSE",chunk.num = NULL,
+         file.output=TRUE,plot.style="CMplot",cutOff=0.05)
 #### # more features   
 More parameters explained [here]
 ### Issues
