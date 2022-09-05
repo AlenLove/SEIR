@@ -127,6 +127,9 @@ The phenotype file is listed as follows:
          selector="stepwise",fun.selection="fastLm",
          extraction="min",X.check="FALSE",chunk.num = NULL,
          file.output=TRUE,plot.style="CMplot",cutOff=0.05)
+**phe**, phenotype data  
+**geno**, genotype data  
+**map**, map data 
 #### # more features   
 More parameters explained [here]
 ### Issues
