@@ -23,8 +23,8 @@
     data(map)
 #### # genotype data
     data(geno)
-    **[back to top](#contents)**  
 We suggest to provide the phenotype file
+
 | Taxa | trait1 | trait2 | trait3 |
 | :---: | :---: |:---: |:---: |
 |33-16|101.5|0.25|0|
