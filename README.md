@@ -21,6 +21,40 @@
 
 #### # genotype information data
     data(map)
+    
+<table>
+<tbody>
+<tr>
+<td align="center">SNP</td>
+<td align="center">Chr</td>
+<td align="center">Pos</td>
+</tr>
+<tr>
+<td align="center">rs3683945</td>
+<td align="center">1</td>
+<td align="center">3197400</td>
+</tr>
+<tr>
+<td align="center">rs3707673</td>
+<td align="center">1</td>
+<td align="center">3407393</td>
+</tr>
+<tr>
+<td align="center">rs6269442</td>
+<td align="center">1</td>
+<td align="center">3492195</td>
+</tr>
+<tr>
+<td align="center">rs6336442</td>
+<td align="center">1</td>
+<td align="center">3580634</td>
+</tr>
+<tr>
+<td align="center">rs13475699</td>
+<td align="center">1</td>
+<td align="center">3860406</td>
+</tr></tbody></table>
+
 #### # genotype data
     data(geno)
     
