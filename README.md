@@ -129,20 +129,32 @@ The phenotype file is listed as follows:
          file.output=TRUE,plot.style="CMplot",cutOff=0.05)
 
 **Y**, Phenotypic vector with length n 
-**X**, n by m dataframe, matrix or big.matrix of genotype matrix  
+
+**X**, n by m dataframe, matrix or big.matrix of genotype matrix 
+
 **GM**, m by 3 dataframe or matrix for SNP name, chromosome and BP
+
 **CV**, n by t dataframe or matrix for t covariates
+
 **maxStep**, maxStep Maximum number of iteration steps
+
 **selector**, Select one method for variable selection
+
 **fun.selection**, The core function for parameter calculation, lm.vec is more faster than fastLm
+
 **extraction**, One method for calculating p values
+
 **X.check**, logical
+
 **chuck.num**, The "pieces" number of genotype matrix when considering memory size
+
 **file.output**, Output GWAS results, Manhattan and QQ plot
+
 **plot.style**, a method for plot Manhattan and QQ plot
+
 **cutoff**, 0.05/marker size, a cutoff line on manhattan plot
 
-```r
+
 #### # more features   
 More parameters explained [here]
 ### Issues
