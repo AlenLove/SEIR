@@ -23,6 +23,15 @@
     data(map)
 #### # genotype data
     data(geno)
+    | Taxa | trait1 | trait2 | trait3 |
+| :---: | :---: |:---: |:---: |
+|33-16|101.5|0.25|0|
+|38-11|	102.7|0.23|1|
+|4226	|101.2|-0.17|1|
+|4722|	105.5|NA|0|
+|A188	|108.1|0.57|1|
+|A214N|	95.13|0.87|0|
+|A239	|100.2|-0.16|1|
 #### # phenotype data
     data(phe)
 #### # association analysis
