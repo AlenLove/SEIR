@@ -25,6 +25,7 @@
     data(geno)
 #### # phenotype data
     data(phe)
+    
     We suggest to provide the phenotype file
 
 | Taxa | trait1 | trait2 | trait3 |
