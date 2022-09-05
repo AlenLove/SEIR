@@ -23,7 +23,9 @@
     data(map)
 #### # genotype data
     data(geno)
-We suggest to provide the phenotype file
+#### # phenotype data
+    data(phe)
+    We suggest to provide the phenotype file
 
 | Taxa | trait1 | trait2 | trait3 |
 | :---: | :---: |:---: |:---: |
@@ -35,8 +37,6 @@ We suggest to provide the phenotype file
 |A214N|	95.13|0.87|0|
 |A239	|100.2|-0.16|1|
 
-#### # phenotype data
-    data(phe)
 #### # association analysis
 SEIR(Y=phe,X=geno,GM=map,CV=NULL,maxStep=10,
     selector="stepwise",fun.selection="fastLm",
